@@ -1,0 +1,20 @@
+apiVersion: redhat/v1
+kind: PrincipalSoftwareEngineer
+metadata:
+    name: Paolo Patierno
+    namespace: Red Hat, Messaging & IoT team
+    annotations:
+        eclipse/committer: Vert.x, Hono & Paho
+        microsoft/mvp: Azure & IoT
+    labels:
+        family: dad of two, husband of one
+        sports: running, swimming, motogp, vr46, ssc napoli
+spec:
+    replicas: 1
+    containers:
+    - image: patiernohub.io/paolo:latest
+    social:
+    - name: Twitter
+      url: https://twitter.com/ppatierno
+    - name: Linkedin
+      url: https://www.linkedin.com/in/paolopatierno/   
