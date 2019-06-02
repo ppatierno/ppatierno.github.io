@@ -9,6 +9,7 @@ metadata:
     labels:
         family: dad of two, husband of one
         sports: running, swimming, motogp, vr46, ssc napoli
+        community: cncf napoli, devday
 spec:
     replicas: 1
     containers:
