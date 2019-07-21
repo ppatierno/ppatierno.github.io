@@ -16,7 +16,7 @@ In a previous life I was an embedded developer working with microcontrollers in 
 
 I am really honoured to be [Microsoft MVP][microsoft mvp profile] since 2014 on Microsoft Azure and IoT.
 
-Finally, I am co-founder of the local meetup [Clound Native Computing Foundation Napoi][cncf napoli] and one of the members of the local [DevDay][devday]
+Finally, I am co-founder of the local meetup [Clound Native Computing Foundation Napoli][cncf napoli] and one of the members of the local [DevDay][devday]
 
 When I am not coding, writing a techincal article or blog post, or on a conference stage delivering a presentation, maybe I am playing at Xbox with my son, running, swimming, or watching MotoGP (VR46 fan) and football (SSC Napoli fan) on TV.
 
