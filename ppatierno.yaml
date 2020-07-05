@@ -4,11 +4,12 @@ metadata:
     name: Paolo Patierno
     namespace: Red Hat, Messaging & IoT team
     annotations:
+        cncf/maintainer: Strimzi
         eclipse/committer: Vert.x, Hono & Paho
-        microsoft/mvp: Azure & IoT
+        microsoft/mvp: Azure
     labels:
         family: dad of two, husband of one
-        sports: running, swimming, motogp, vr46, ssc napoli
+        sports: running, swimming, motogp, vr46, formula1, ferrari, ssc napoli
         community: cncf napoli, devday
 spec:
     replicas: 1
