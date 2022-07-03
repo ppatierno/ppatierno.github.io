@@ -1,5 +1,5 @@
 apiVersion: redhat/v1
-kind: PrincipalSoftwareEngineer
+kind: SeniorPrincipalSoftwareEngineer
 metadata:
     name: Paolo Patierno
     namespace: Red Hat, Messaging & IoT team
