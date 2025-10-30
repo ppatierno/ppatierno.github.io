@@ -10,7 +10,7 @@ metadata:
     labels:
         family: dad of two, husband of one
         sports: running, swimming, motogp, vr46, formula1, ferrari, ssc napoli
-        community: cncf napoli, devday
+        community: cncf napoli
 spec:
     replicas: 1
     containers:
