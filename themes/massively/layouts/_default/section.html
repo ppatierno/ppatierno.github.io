@@ -1,0 +1,37 @@
+{{ define "main" }}
+	<!-- Post -->
+		<section class="post">
+			<header class="major">
+				<h1>{{ .Title }}</h1>
+				{{ if .Content }}
+				<p>{{ .Content }}</p>
+				{{ end }}
+			</header>
+		</section>
+
+	<!-- Posts -->
+		{{ if .Pages }}
+		<section class="posts">
+			{{ range .Pages }}
+			<article>
+				<header>
+					{{ if .Date }}
+					<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+					{{ end }}
+					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+				</header>
+				{{ if .Params.image }}
+				{{ $imgPath := .Params.image }}
+				{{ if not (hasPrefix $imgPath "/") }}{{ $imgPath = printf "/%s" $imgPath }}{{ end }}
+				<a href="{{ .RelPermalink }}" class="image fit"><img src="{{ $imgPath }}" alt="" /></a>
+				{{ end }}
+				<p>{{ .Params.description | default .Summary }}</p>
+				<ul class="actions special">
+					<li><a href="{{ .RelPermalink }}" class="button">Full Story</a></li>
+				</ul>
+			</article>
+			{{ end }}
+		</section>
+		{{ end }}
+{{ end }}
+

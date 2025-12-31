@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="{{ "favicons/favicon.ico" | relURL }}" />
+		<link rel="stylesheet" href="{{ "css/fontawesome-all.min.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
+		<noscript><link rel="stylesheet" href="{{ "css/noscript.css" | relURL }}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="{{ if .IsHome }}fade-in{{ end }}">
+
+				<!-- Intro -->
+				{{ if .IsHome }}
+					<div id="intro">
+						<h1>{{ .Site.Params.intro.title | default "This is<br />Massively" }}</h1>
+						<p>{{ .Site.Params.intro.description | default "A free, fully responsive HTML5 + CSS3 site template designed by @ajlkn for HTML5 UP and released for free under the Creative Commons license." | safeHTML }}</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+				{{ end }}
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | relURL }}" class="logo">{{ .Site.Params.logo | default "Massively" }}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="{{ if .IsHome }}active{{ end }}"><a href="{{ "/" | relURL }}">About me</a></li>
+							{{ range .Site.Menus.main }}
+							<li class="{{ if eq $.RelPermalink .URL }}active{{ end }}"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+							{{ end }}
+						</ul>
+						<ul class="icons">
+							{{ range .Site.Params.social }}
+							<li><a href="{{ .url }}" class="icon brands {{ .icon }}"><span class="label">{{ .name }}</span></a></li>
+							{{ end }}
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						{{ block "main" . }}{{ end }}
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; {{ .Site.Params.copyright | default "Untitled" }}</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ "js/jquery.min.js" | relURL }}"></script>
+			<script src="{{ "js/jquery.scrollex.min.js" | relURL }}"></script>
+			<script src="{{ "js/jquery.scrolly.min.js" | relURL }}"></script>
+			<script src="{{ "js/browser.min.js" | relURL }}"></script>
+			<script src="{{ "js/breakpoints.min.js" | relURL }}"></script>
+			<script src="{{ "js/util.js" | relURL }}"></script>
+			<script src="{{ "js/main.js" | relURL }}"></script>
+
+	</body>
+</html>
+

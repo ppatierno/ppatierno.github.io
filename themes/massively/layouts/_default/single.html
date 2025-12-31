@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+	<!-- Post -->
+		<section class="post">
+			<header class="major">
+				{{ if .Params.date }}
+				<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+				{{ end }}
+				<h1>{{ .Title }}</h1>
+				{{ if .Params.description }}
+				<p>{{ .Params.description }}</p>
+				{{ end }}
+			</header>
+			{{ if .Params.image }}
+			{{ $imgPath := .Params.image }}
+			{{ if not (hasPrefix $imgPath "/") }}{{ $imgPath = printf "/%s" $imgPath }}{{ end }}
+			<div class="image main"><img src="{{ $imgPath }}" alt="" /></div>
+			{{ end }}
+			{{ .Content }}
+		</section>
+
+{{ end }}
+

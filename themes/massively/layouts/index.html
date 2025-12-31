@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+	{{ $aboutMe := .Site.GetPage "/about-me" }}
+	
+	{{ if $aboutMe }}
+	<!-- About Me -->
+		<section class="post">
+			<header class="major">
+				<h1>{{ $aboutMe.Title }}</h1>
+				{{ if $aboutMe.Params.description }}
+				<p>{{ $aboutMe.Params.description }}</p>
+				{{ end }}
+			</header>
+			{{ if $aboutMe.Params.image }}
+			{{ $imgPath := $aboutMe.Params.image }}
+			{{ if not (hasPrefix $imgPath "/") }}{{ $imgPath = printf "/%s" $imgPath }}{{ end }}
+			<div class="image main"><img src="{{ $imgPath }}" alt="" /></div>
+			{{ end }}
+			{{ $aboutMe.Content }}
+		</section>
+	{{ else }}
+	<!-- Fallback if about-me page not found -->
+		<section class="post">
+			<header class="major">
+				<h1>About me</h1>
+			</header>
+			<p>About me page not found.</p>
+		</section>
+	{{ end }}
+
+{{ end }}

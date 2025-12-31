@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+	{{ $posts := where .Site.RegularPages "Section" "posts" }}
+	{{ $posts = $posts.ByDate.Reverse }}
+	{{ $paginator := .Paginate $posts }}
+	
+	{{ $featured := index $paginator.Pages 0 }}
+	{{ $regularPosts := after 1 $paginator.Pages }}
+
+	<!-- Featured Post -->
+		<article class="post featured">
+			<header class="major">
+				{{ with $featured }}
+				<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+				<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+				<p>{{ .Params.description | default .Summary }}</p>
+				{{ else }}
+				<span class="date">{{ now.Format "January 2, 2006" }}</span>
+				<h2><a href="#">And this is a<br />
+				massive headline</a></h2>
+				<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+				facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+				amet nullam sed etiam veroeros.</p>
+				{{ end }}
+			</header>
+			{{ with $featured }}
+			{{ $imgPath := .Params.image | default "images/pic01.jpg" }}
+			{{ if not (hasPrefix $imgPath "/") }}{{ $imgPath = printf "/%s" $imgPath }}{{ end }}
+			<a href="{{ .RelPermalink }}" class="image main"><img src="{{ $imgPath }}" alt="" /></a>
+			{{ else }}
+			<a href="#" class="image main"><img src="/images/pic01.jpg" alt="" /></a>
+			{{ end }}
+			<ul class="actions special">
+				<li><a href="{{ $featured.RelPermalink | default "#" }}" class="button large">Full Story</a></li>
+			</ul>
+		</article>
+
+	<!-- Posts -->
+		<section class="posts">
+			{{ range $regularPosts }}
+			<article>
+				<header>
+					<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+				</header>
+				{{ $imgPath := .Params.image | default "images/pic02.jpg" }}
+				{{ if not (hasPrefix $imgPath "/") }}{{ $imgPath = printf "/%s" $imgPath }}{{ end }}
+				<a href="{{ .RelPermalink }}" class="image fit"><img src="{{ $imgPath }}" alt="" /></a>
+				<p>{{ .Params.description | default .Summary }}</p>
+				<ul class="actions special">
+					<li><a href="{{ .RelPermalink }}" class="button">Full Story</a></li>
+				</ul>
+			</article>
+			{{ end }}
+		</section>
+
+	<!-- Footer -->
+		<footer>
+			<div class="pagination">
+				{{ if $paginator.HasPrev }}
+				<a href="{{ $paginator.Prev.URL }}" class="previous">Prev</a>
+				{{ end }}
+
+				{{ range $paginator.Pagers }}
+					{{ if eq . $paginator.PageNumber }}
+					<a href="{{ .URL }}" class="page active">{{ .PageNumber }}</a>
+					{{ else }}
+					<a href="{{ .URL }}" class="page">{{ .PageNumber }}</a>
+					{{ end }}
+				{{ end }}
+
+				{{ if $paginator.HasNext }}
+				<a href="{{ $paginator.Next.URL }}" class="next">Next</a>
+				{{ end }}
+			</div>
+		</footer>
+
+{{ end }}
+
