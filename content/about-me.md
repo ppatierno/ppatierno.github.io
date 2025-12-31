@@ -1,6 +1,6 @@
 ---
 title: "About me"
-image: "images/ppatierno.jpg"
+image: "images/about-me.jpg"
 ---
 
 I'm a **Senior Principal Software Engineer** (Red Hat) working for IBM on the messaging and data streaming team. 
