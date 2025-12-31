@@ -1,0 +1,55 @@
+baseURL = 'https://ppatierno.github.io/'
+languageCode = 'en-us'
+title = 'Paolo Patierno'
+theme = 'massively'
+
+[pagination]
+  pagerSize = 5
+
+[params]
+  logo = "Paolo Patierno"
+  copyright = "Paolo Patierno"
+
+  [params.intro]
+    title = "Paolo Patierno"
+    description = "Senior Principal Software Engineer (Red Hat) at IBM, Strimzi Maintainer, CNCF Ambassador"
+
+  [[params.social]]
+    name = "GitHub"
+    icon = "fa-github"
+    url = "https://github.com/ppatierno"
+
+  [[params.social]]
+    name = "LinkedIn"
+    icon = "fa-linkedin"
+    url = "https://www.linkedin.com/in/paolopatierno/"
+
+  [[params.social]]
+    name = "YouTube"
+    icon = "fa-youtube"
+    url = "https://www.youtube.com/@ppatierno/videos"
+
+  [[params.social]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/ppatierno"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Conferences"
+    url = "/conferences/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Demos"
+    url = "/demos/"
+    weight = 7
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
