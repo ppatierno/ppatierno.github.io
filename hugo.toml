@@ -50,6 +50,11 @@ theme = 'massively'
     url = "/demos/"
     weight = 7
 
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 8
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
