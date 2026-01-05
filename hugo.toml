@@ -27,7 +27,7 @@ theme = 'massively'
   [[params.social]]
     name = "YouTube"
     icon = "fa-youtube"
-    url = "https://www.youtube.com/@ppatierno/videos"
+    url = "https://www.youtube.com/@ppatierno/"
 
   [[params.social]]
     name = "Twitter"
