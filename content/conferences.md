@@ -3,6 +3,11 @@ title: Conferences
 image: images/conferences.jpg
 ---
 
+## 2026
+- **The road to Strimzi 1.0**
+  - KubeCon EU, Amsterdam, Mar 25th, 2026
+  - [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-03-25%20The%20Road%20to%20Strimzi%201.0.pdf)
+
 ## 2025
 - **Beyond the operators: the full Strimzi ecosystem for Kafka on Kubernetes**
   - KubeCon NA, Atlanta, Nov 11th, 2025
