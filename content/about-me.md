@@ -1,6 +1,7 @@
 ---
 title: "About me"
-image: "images/about-me.jpg"
+# Image moved to markdown content below to display text first, then image
+# image: "images/about-me.jpg"
 ---
 
 I'm a **Senior Principal Software Engineer** (Red Hat) working for IBM on messaging and data streaming. 
@@ -10,3 +11,5 @@ I'm also an Eclipse Committer for the [Eclipse Vert.x](https://vertx.io) compone
 I have spoken at numerous national and international conferences about Apache Kafka, Strimzi, and IoT, including KubeCon, Devoxx, Voxxed Days, KCDs, Red Hat Summit and DevNation.
 Finally, I am a [CNCF ambassador](https://www.cncf.io/people/ambassadors/?_sft_lf-country=it&p=paolo-patierno) and I am former Microsoft MVP across the embedded, Azure and Java categories (for 11 years).
 I'm passionate about open source, distributed systems, and helping developers build better messaging and streaming applications.
+
+![About me](/images/about-me.jpg)
