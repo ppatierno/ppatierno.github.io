@@ -7,6 +7,9 @@ image: images/conferences.jpg
 - **StrimziCon 2026 Keynote**
   - StrimziCon, Jun 3rd, 2025
   - [Recording](https://www.youtube.com/watch?v=8U7jBzDJd8c) | [Recording](https://www.youtube.com/watch?v=Mh-Ac4grti0) | [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-06-03%20StrimziCon%202026%20Keynote.pdf)
+- **Streaming AI/ML with Apache Kafka: Real-Time Patterns for Modern Intelligence**
+  - Current, London, May 20th, 2026
+  - [Recording](https://current.confluent.io/post-conference-videos-26/streaming-aiml-with-apache-kafka-realtime-patterns-for-modern-intelligence-ldn26) | [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-05-20%20Streaming%20AI_ML%20with%20Apache%20Kafka%20Real-Time%20Patterns%20for%20Modern%20Intelligence.pdf)
 - **The road to Strimzi 1.0**
   - KubeCon EU, Amsterdam, Mar 25th, 2026
   - [Recording](https://www.youtube.com/watch?v=1BtVSQ0t-CU) | [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-03-25%20The%20Road%20to%20Strimzi%201.0.pdf)
