@@ -3,6 +3,11 @@ title: Articles
 image: images/articles.jpg
 ---
 
+## 2026
+- **Gateway API and TLSRoute support in Strimzi**
+  - Jul 9th, 2026
+  - [Read article](https://strimzi.io/blog/2026/07/09/gateway-api-tlsroute-support-in-strimzi/)
+
 ## 2025
 - **Auto-rebalancing on cluster scaling**
   - Nov 30th, 2025
