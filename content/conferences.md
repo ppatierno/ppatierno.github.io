@@ -5,7 +5,7 @@ image: images/conferences.jpg
 
 ## 2026
 - **StrimziCon 2026 Keynote**
-  - StrimziCon, Jun 3rd, 2025
+  - StrimziCon, Jun 3rd, 2026
   - [Recording](https://www.youtube.com/watch?v=8U7jBzDJd8c) | [Recording](https://www.youtube.com/watch?v=Mh-Ac4grti0) | [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-06-03%20StrimziCon%202026%20Keynote.pdf)
 - **Streaming AI/ML with Apache Kafka: Real-Time Patterns for Modern Intelligence**
   - Current, London, May 20th, 2026
