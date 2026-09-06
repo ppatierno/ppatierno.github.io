@@ -12,7 +12,7 @@ theme = 'massively'
 
   [params.intro]
     title = "Paolo Patierno"
-    description = "Senior Principal Software Engineer (Red Hat) at IBM, Strimzi Maintainer, CNCF Ambassador"
+    description = "Red Hat Senior Principal Software Engineer at IBM, Strimzi Maintainer, CNCF Ambassador"
 
   [[params.social]]
     name = "GitHub"
