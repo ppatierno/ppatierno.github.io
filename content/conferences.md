@@ -4,6 +4,9 @@ image: images/conferences.jpg
 ---
 
 ## 2026
+- **The Quantum Heist: Your Data Is Already Gone**
+  - Linux Day, Napoli, Oct 24th, 2026
+  - [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-10-24%20The%20Quantum%20Heist%20Your%20Data%20Is%20Already%20Gone.pdf)
 - **StrimziCon 2026 Keynote**
   - StrimziCon, Jun 3rd, 2026
   - [Recording](https://www.youtube.com/watch?v=8U7jBzDJd8c) | [Recording](https://www.youtube.com/watch?v=Mh-Ac4grti0) | [Slides](https://github.com/ppatierno/presentations/blob/main/2026/2026-06-03%20StrimziCon%202026%20Keynote.pdf)
