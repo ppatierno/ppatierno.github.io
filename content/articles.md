@@ -4,6 +4,9 @@ image: images/articles.jpg
 ---
 
 ## 2026
+- **Cruise Control joins the Linux Foundation: what it means for Strimzi**
+  - Nov 3rd, 2026
+  - [Read article](https://strimzi.io/blog/2026/11/03/cruise-control-joins-linux-foundation/)
 - **Gateway API and TLSRoute support in Strimzi**
   - Jul 9th, 2026
   - [Read article](https://strimzi.io/blog/2026/07/09/gateway-api-tlsroute-support-in-strimzi/)
