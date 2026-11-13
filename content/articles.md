@@ -71,3 +71,16 @@ image: images/articles.jpg
 - **Eclipse Hono – Connecting large numbers of IoT devices**
   - Jan 10th, 2018
   - [Read article](https://blog.bosch-si.com/developer/eclipse-hono-connecting-large-numbers-of-iot-devices/)
+
+## 2017
+- **Strengths and Weaknesses of IoT Communication Patterns**
+  - May 28th, 2017
+  - [Read article](https://dzone.com/articles/strengths-and-weaknesses-of-iot-communication-patterns)
+- **Don't Use Apache Kafka Consumer Groups the Wrong Way!**
+  - Jul 30th, 2017
+  - [Read article](https://dzone.com/articles/dont-use-apache-kafka-consumer-groups-the-wrong-wa)
+
+## 2016
+- **AMQP Essentials - The Binary Transfer Protocol for Enterprise Applications and IoT**
+  - Jan 18th, 2016
+  - [Read article](https://dzone.com/refcardz/amqp-essentials)
