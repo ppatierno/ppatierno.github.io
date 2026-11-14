@@ -9,7 +9,7 @@ Java has been a constant in my work, from enterprise and distributed application
 
 I have extensive experience with Apache Kafka, Kubernetes, cloud-native applications, and IoT platforms.
 I'm co-founder and one of the maintainers of the [Strimzi](https://strimzi.io) project, a CNCF incubating project for running Apache Kafka on Kubernetes using operators.
-Through Strimzi and my work around Kafka, I have contributed to building and evolving large-scale, cloud-native systems and to the Java ecosystem around Apache Kafka.
+Through Strimzi and my work around Kafka, I have contributed to building and evolving large-scale, cloud-native systems and to the Java ecosystem around Apache Kafka. I’m a [TSC member](https://github.com/cruise-control-for-kafka/cruise-control/blob/main/GOVERNANCE.md#technical-steering-committee) of the Cruise Control project, part of the Linux Foundation.
 
 I'm also an Eclipse Committer for the [Eclipse Vert.x](https://vertx.io), where I contribute to the reactive Java ecosystem, including components providing an Apache Kafka client and MQTT client/server.
 I'm committer for [Eclipse Paho](https://eclipse.dev/paho/) and historical committer for [Eclipse Hono](https://eclipse.dev/hono/) as well.
